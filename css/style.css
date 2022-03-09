@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* NORMALIZACION Y DEFUALT CONFIG */
 * {
     margin: 0;
     box-sizing: border-box;
@@ -7,11 +8,17 @@
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
+body {
+    color: #3C2313;
 }
 
-header .ofertas {
+ul {
+    list-style: none;
+
+}
+
+/* DESCUENTOS */
+.descuentos {
     background: #222222;
     color: #f3f3f3;
     display: flex;
@@ -22,10 +29,16 @@ header .ofertas {
 
 }
 
-.ofertas ul {
+.descuentos ul {
     display: flex;
 }
 
+.descuentos a {
+    padding-left: 12px;
+    color: #f3f3f3;
+}
+
+/* HEADER */
 header .nav-container {
     background: #F0A83E;
     display: flex;
@@ -35,29 +48,55 @@ header .nav-container {
 
 }
 
-header a {
+nav a {
     color: #f3f3f3;
+    font-size: 13px;
+    padding: 10px;
 }
 
-nav a {
-    font-size: 13px;
+nav a::before {
+    color: #f3f3f3;
+    content: "\f1b0 ";
+    font-family: FontAwesome;
+    padding-right: 3px;
 }
 
 nav ul {
     display: flex;
 }
 
-.ofertas li {
-    padding-left: 12px;
-}
-
-nav ul li {
-    padding: 10px;
-}
-
+/* HERO */
 .banner {
     background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 409px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner div {
+    text-align: center;
+    padding-right: 12px;
+}
+
+.banner div h2 {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.banner div p {
+    padding: 12px;
+}
+
+.banner div a {
+    background: #F0A83E;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 23px;
 }

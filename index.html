@@ -23,7 +23,7 @@
     <header>
         <!-- Barra de menú principal -->
         <div class="nav-container">
-            <img src="./img/Logo.png" alt="">
+            <img src="./img/logo.svg" alt="">
             <!-- Menú principal -->
             <nav>
                 <ul>
@@ -38,6 +38,7 @@
 
     <!-- Contenido para el área principal -->
     <main>
+
         <!-- Sección banner -->
         <section class="banner">
             <div>
@@ -46,6 +47,7 @@
                 <a href="#">COMEDEROS</a>
             </div>
         </section>
+
         <!-- Sección productos -->
         <section class="productos">
             <img src="./img/paw.svg" alt="Imagen de patita">
@@ -74,12 +76,63 @@
                     <p>$650</p>
                 </article>
             </articles>
+        </section>
 
+        <!-- Sección contacto -->
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form class="contact">
+                <input type="text" placeholder="Nombre y Apellido" class="input-box">
+                <input type="email" placeholder="Ingresá tu correo electrónico" class="input-box">
+                <input type="text" placeholder="Teléfono" class="input-box">
+                <div class="btn-container">
+                    <button id="reset" class="btn">Resetear</button>
+                    <button id="send" class="btn">Enviar</button>
+                </div>
+            </form>
         </section>
     </main>
 
     <!-- Contenido para el pie de página -->
-    <footer>Todos los derechos reservados Front End</footer>
+    <footer>
+        <div class="subcribe">
+            <div>
+                <img src="./img/subscribe.svg" alt="">
+                <p>Suscríbete para más novedades</p>
+            </div>
+            <form>
+                <input type="email" placeholder="Ingresá tu correo electronico" class="input-box">
+                <button id="subcribe" class="btn">Suscribirme</button>
+            </form>
+        </div>
+        <div class="infoAndLogo">
+            <div class="info-container">
+                <div class="info">
+                    <img src="./img/location.svg" alt="">
+                    <div>
+                        <h3>Localidad</h3>
+                        <p>Santa Rosa - La Pampa</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="./img/phone.svg" alt="">
+                    <div>
+                        <h3>Teléfono</h3>
+                        <p>2954-313213</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <img src="./img/mail.svg" alt="">
+                    <div>
+                        <h3>Correo Eléctronico</h3>
+                        <p>lucasdiaz@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="logo"><img src="./img/logo-info.svg" alt="Logo sitio información"></div>
+        </div>
+        <p class="derechos">Todos los derechos reservados Front End</p>
+    </footer>
 </body>
 
 </html>

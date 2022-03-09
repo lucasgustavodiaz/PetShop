@@ -156,11 +156,135 @@ nav ul {
     height: auto;
 }
 
+/* SECCION CONTACTO */
+.contacto {
+    text-align: center;
+}
 
 
+form.contact {
+    margin-top: 20px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-box {
+    width: 340px;
+    height: 40px;
+    padding: 14px;
+    border-radius: 15px;
+    border: 1px solid #d1d1d1;
+    background: #3C2313;
+    color: #fff;
+    outline: none;
+    font-size: 12px;
+}
+
+.input-box::placeholder {
+    color: #fff;
+    font-size: 12px;
+}
+
+.btn-container {
+    margin-top: 31px;
+}
+
+.btn {
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px;
+    width: 110px;
+    cursor: pointer;
+}
+
+#reset {
+    background: #8A8787;
+}
+
+#send {
+    background: #F0A83E;
+}
 
 /* FOOTER */
-footer {
+.subcribe {
+    background: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 47px 10px 23px;
+}
+
+.subcribe div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subcribe p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.subcribe .input-box {
+    width: 271px;
+    height: 40px;
+    padding: 14px;
+    border-radius: 15px;
+    border: 1px solid #d1d1d1;
+    background: #FFFFFF;
+    color: #A0A0A0;
+    outline: none;
+    font-size: 12px;
+}
+
+.subcribe .input-box::placeholder {
+    color: #A0A0A0;
+    font-size: 12px;
+}
+
+.subcribe .btn {
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-size: 10px;
+    padding: 12px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#subcribe {
+    background: #3C2313;
+}
+
+.infoAndLogo {
+    background: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 70px 0 70px;
+}
+
+.info-container h3 {
+    color: #fff;
+}
+
+.info-container p {
+    color: #8A8787;
+}
+
+.info {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.derechos {
     background: #222222;
     color: #fff;
     font-size: 10px;

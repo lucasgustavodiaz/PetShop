@@ -131,14 +131,14 @@ nav ul {
 }
 
 .cards {
-    margin-top: 18px;
+    margin: 33px 22px;
     display: flex;
     justify-content: center;
+    gap: 22px;
 }
 
 .card {
     background: #FBFAF6;
-    margin: 11px;
 }
 
 .card h4 p {

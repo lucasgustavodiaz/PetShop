@@ -212,26 +212,26 @@ form.contact {
 }
 
 /* FOOTER */
-.subcribe {
+.subscribe {
     background: #F0A83E;
     display: flex;
     justify-content: space-between;
     padding: 10px 47px 10px 23px;
 }
 
-.subcribe div {
+.subscribe div {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.subcribe p {
+.subscribe p {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
 }
 
-.subcribe .input-box {
+.subscribe .input-box {
     width: 271px;
     height: 40px;
     padding: 14px;
@@ -243,12 +243,12 @@ form.contact {
     font-size: 12px;
 }
 
-.subcribe .input-box::placeholder {
+.subscribe .input-box::placeholder {
     color: #A0A0A0;
     font-size: 12px;
 }
 
-.subcribe .btn {
+.subscribe .btn {
     border-radius: 15px;
     border: none;
     color: #fff;
@@ -258,7 +258,7 @@ form.contact {
     cursor: pointer;
 }
 
-#subcribe {
+#subscribe {
     background: #3C2313;
 }
 

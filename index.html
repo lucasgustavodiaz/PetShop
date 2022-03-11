@@ -21,11 +21,10 @@
         </ul>
     </div>
     <header>
-        <!-- Barra de menú principal -->
         <div class="nav-container">
             <img src="./img/logo.svg" alt="">
-            <!-- Menú principal -->
-            <nav>
+            <nav class="navegacion">
+                <a href="#" class="toggle">☰</a>
                 <ul>
                     <li><a href="#">Categorías</a></li>
                     <li><a href="#">Pets</a></li>
@@ -133,6 +132,16 @@
         </div>
         <p class="derechos">Todos los derechos reservados Front End</p>
     </footer>
+
+    <script>
+        const toggle = document.querySelector('.toggle')
+        console.log(toggle)
+        const navUL = document.querySelector('nav.navegacion ul')
+        console.log(navUL)
+        toggle.addEventListener('click', () => {
+            navUL.classList.toggle('open')
+        })
+    </script>
 </body>
 
 </html>

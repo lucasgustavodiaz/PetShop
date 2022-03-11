@@ -315,7 +315,8 @@ form.contact {
 
     header .nav-container {
         position: relative;
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .navegacion ul {
@@ -325,6 +326,10 @@ form.contact {
     header nav>a {
         font-size: 15px;
         padding: 0;
+    }
+
+    .navegacion {
+        flex: 1 1 100%;
     }
 
     .navegacion ul.open {

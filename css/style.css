@@ -29,13 +29,12 @@ ul {
 
 }
 
-.descuentos ul {
-    display: flex;
-}
-
-.descuentos a {
-    padding-left: 12px;
-    color: #f3f3f3;
+select {
+    color: #fff;
+    background: #222222;
+    outline: none;
+    border: none;
+    font-size: 10px;
 }
 
 /* HEADER */
@@ -125,29 +124,33 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
+    gap: 13px;
 }
 
 .productos li.separador {
-    padding: 20px 16px;
+    margin: 20px 0;
     color: #666666;
 }
 
 .productos a {
     display: inline-block;
-    padding: 20px 16px;
+    padding: 20px 0px;
     color: #666666;
     font-size: 15px;
 }
 
 .cards {
-    margin: 33px 22px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 22px;
+    justify-content: center;
+    margin: 33px 22px;
 }
 
 .card {
     background: #FBFAF6;
+    width: 265px;
+    min-width: 239px;
 }
 
 .card h4 p {
@@ -263,7 +266,8 @@ form.contact {
     color: #fff;
     font-size: 10px;
     padding: 12px;
-    width: 80px;
+    max-width: 80px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -303,6 +307,25 @@ form.contact {
 }
 
 /* MEDIA QUERIES */
+
+@media all and (max-width: 790px) {
+
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe>div {
+        margin-bottom: 14px;
+    }
+
+    .subscribe form {
+        display: flex;
+        gap: 6px;
+        width: 100%;
+        justify-content: center;
+    }
+}
 
 @media all and (max-width: 660px) {
 
@@ -344,4 +367,31 @@ form.contact {
         justify-content: flex-end;
     }
 
+}
+
+@media all and (max-width: 620px) {
+    .infoAndLogo {
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        margin-bottom: 23px;
+    }
+
+    .contacto h2 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .btn-container {
+        display: flex;
+        width: 100%;
+        gap: 6px;
+        padding: 0 6px;
+    }
+
+    .btn {
+        flex: 1;
+        height: 45px;
+    }
 }

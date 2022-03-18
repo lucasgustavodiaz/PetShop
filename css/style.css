@@ -51,11 +51,11 @@ nav a {
     color: #f3f3f3;
     font-size: 13px;
     padding: 10px;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 nav ul a:hover {
-    background-color: #3C2313;
+    color: #3C2313;
 }
 
 nav ul a::before {
@@ -63,6 +63,11 @@ nav ul a::before {
     content: "\f1b0 ";
     font-family: FontAwesome;
     padding-right: 3px;
+    transition: 0.5s;
+}
+
+nav ul a:hover::before {
+    color: #3C2313;
 }
 
 nav ul {
